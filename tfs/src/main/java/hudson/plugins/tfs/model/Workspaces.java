@@ -117,9 +117,9 @@ public class Workspaces implements ListWorkspacesCommand.WorkspaceFactory {
      * @param workspace the workspace to delete
      */
     public void deleteWorkspace(Workspace workspace) {
-        DeleteWorkspaceCommand command = new DeleteWorkspaceCommand(server, workspace.getName());
-        workspaces.remove(workspace.getName());
-        server.execute(command.getCallable());
+        //DeleteWorkspaceCommand command = new DeleteWorkspaceCommand(server, workspace.getName());
+        //workspaces.remove(workspace.getName());
+        //server.execute(command.getCallable());
     }
 
     public Workspace createWorkspace(String name, String computer, String owner, String comment) {
